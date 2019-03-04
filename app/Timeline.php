@@ -6,14 +6,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Timeline extends Model {
 
-    protected $fillable = [];
-
-    protected $dates = [];
-
-    public static $rules = [
-        // Validation rules
+    protected $fillable = [
+    	'user_id','title','date','content'
     ];
 
-    // Relationships
+    public static $rules_add = [
+        'user_id' => 'required'
+        'title' => 'required'
+        'date' => 'required'
+        'content' => 'required'
+    ];
+
+    public static $rules_update = [
+        'user_id' => 'required'
+        'title' => 'required'
+        'date' => 'required'
+        'content' => 'required'
+    ];
 
 }
