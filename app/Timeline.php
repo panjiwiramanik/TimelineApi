@@ -13,16 +13,16 @@ class Timeline extends Model {
     ];
 
     public static $rules_add = [
-        'user_id' => 'required'
-        'title' => 'required'
-        'date' => 'required'
+        'user_id' => 'required',
+        'title' => 'required',
+        'date' => 'required',
         'content' => 'required'
     ];
 
     public static $rules_update = [
-        'user_id' => 'required'
-        'title' => 'required'
-        'date' => 'required'
+        'user_id' => 'required',
+        'title' => 'required',
+        'date' => 'required',
         'content' => 'required'
     ];
 
