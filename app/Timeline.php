@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Timeline extends Model {
 
+	protected $table = 'timeline';
+
     protected $fillable = [
     	'user_id','title','date','content'
     ];
