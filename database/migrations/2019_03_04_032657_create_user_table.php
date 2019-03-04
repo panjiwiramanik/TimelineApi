@@ -8,7 +8,7 @@ class CreateUserTable extends Migration
 
     public function up()
     {
-        Schema::create('User', function(Blueprint $table) {
+        Schema::create('user', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name', 100);
             $table->string('email', 60);
@@ -20,6 +20,6 @@ class CreateUserTable extends Migration
 
     public function down()
     {
-        Schema::drop('User');
+        Schema::drop('user');
     }
 }

@@ -8,7 +8,7 @@ class CreateTimelineTable extends Migration
 
     public function up()
     {
-        Schema::create('Timeline', function(Blueprint $table) {
+        Schema::create('timeline', function(Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
             $table->string('title');
@@ -20,6 +20,6 @@ class CreateTimelineTable extends Migration
 
     public function down()
     {
-        Schema::drop('Timeline');
+        Schema::drop('timeline');
     }
 }
