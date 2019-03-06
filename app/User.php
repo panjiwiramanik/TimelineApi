@@ -19,4 +19,9 @@ class User extends Model {
         'password' => 'required'
     ];
 
+    public static $login = [
+        'name' => 'required',
+        'password' => 'required'
+    ];
+
 }

@@ -133,7 +133,7 @@ trait RESTActions {
     public function login(Request $request) 
     {
         $m = self::MODEL;
-        $valid = Validator::make($request->all(), $m::$rules_add);
+        $valid = Validator::make($request->all(), $m::$login);
         if ($valid->fails()) {
             $error = $valid->errors();
             $data['status'] = 'error';
