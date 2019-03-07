@@ -20,7 +20,7 @@ class User extends Model {
     ];
 
     public static $login = [
-        'name' => 'required',
+        'username' => 'required',
         'password' => 'required'
     ];
 
