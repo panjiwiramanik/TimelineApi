@@ -16,8 +16,7 @@ class Timeline extends Model {
         'user_id' => 'required',
         'title' => 'required',
         'date' => 'required',
-        'content' => 'required',
-        'color' => 'required'
+        'content' => 'required'
     ];
 
     public static $rules_update = [
