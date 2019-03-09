@@ -12,6 +12,7 @@ class CreateTimelineTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->string('title');
+            $table->string('color');
             $table->datetime('date');
             $table->text('content');
             $table->timestamps();
