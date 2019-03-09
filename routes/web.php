@@ -26,7 +26,7 @@ $router->post('user/login', 'UsersController@login');
  * Routes for resource timeline
  */
 $router->get('timeline', 'TimelinesController@all');
-$router->get('timeline/{id}', 'TimelinesController@get');
+$router->get('timeline/{id}', 'TimelinesController@getAll');
 $router->post('timeline', 'TimelinesController@add');
 $router->post('timeline/{id}', 'TimelinesController@put');
 $router->delete('timeline/{id}', 'TimelinesController@remove');

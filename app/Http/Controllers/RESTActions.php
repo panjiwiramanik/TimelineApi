@@ -187,4 +187,22 @@ trait RESTActions {
         return response()->json($data, $status);
     }
 
+    public function getAll($id)
+    {
+        $m = self::MODEL;
+        $get = $m::where('user_id', '=', $id)->get();
+        if(is_null($get)){
+            $data['status'] = 'error';
+            $data['message'] = 'Data Tidak Bisa Ditemukan !';
+            $data['result'] = $get;
+            $status = Response::HTTP_NOT_FOUND;
+        } else {
+            $data['status'] = 'success';
+            $data['message'] = '';
+            $data['result'] = $get;
+            $status = Response::HTTP_OK;
+        }
+        return response()->json($data, $status);
+    }
+
 }
