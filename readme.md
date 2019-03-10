@@ -1,21 +1,28 @@
-# Lumen PHP Framework
+## Application overview
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+1. Sign in
+![signin](https://user-images.githubusercontent.com/36139351/54079131-fb835b80-4308-11e9-94f4-f48888380d1a.png) 
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+2. Sign Up
+![signup](https://user-images.githubusercontent.com/36139351/54079129-faeac500-4308-11e9-8a51-b4d5a1990430.png)
 
-## Official Documentation
+3. Home
+![signup](![home](https://user-images.githubusercontent.com/36139351/54079130-fb835b80-4308-11e9-94c1-80d80d40f5f5.png)
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+## Api Route
 
-## Security Vulnerabilities
+Base Url = https://timelineapi.derazu.tech/
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+| Type | Link | Info | 
+|------|------|------|
+| get | user | get all user account |
+| post } user | register user account, param: name, email, username, password |
+| post | user/login | login user, param: username, password |
+| get | timeline/{id} | get all timeline with user id |
+| post | timeline | add timeline based on user id, param: user_id, title, date, content |
+| post | timeline/{id} | edit timeline based on timeline id, param: user_id, content, date, title |
+| delete | timeline/{id} | delete timeline based on timeline id |
 
-## License
+## Authors
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* **M. Panji Wiramanik** - (https://github.com/panjiwiramanik)
