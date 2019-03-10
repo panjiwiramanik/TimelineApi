@@ -16,7 +16,7 @@ Base Url = https://timelineapi.derazu.tech/
 | Type | Link | Info | 
 |------|------|------|
 | get | user | get all user account |
-| post } user | register user account, param: name, email, username, password |
+| post | user | register user account, param: name, email, username, password |
 | post | user/login | login user, param: username, password |
 | get | timeline/{id} | get all timeline with user id |
 | post | timeline | add timeline based on user id, param: user_id, title, date, content |
