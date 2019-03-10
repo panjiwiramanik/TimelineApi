@@ -1,13 +1,16 @@
 ## Application overview
 
 1. Sign in
+
 ![signin](https://user-images.githubusercontent.com/36139351/54079131-fb835b80-4308-11e9-94f4-f48888380d1a.png) 
 
 2. Sign Up
+
 ![signup](https://user-images.githubusercontent.com/36139351/54079129-faeac500-4308-11e9-8a51-b4d5a1990430.png)
 
 3. Home
-![signup](![home](https://user-images.githubusercontent.com/36139351/54079130-fb835b80-4308-11e9-94c1-80d80d40f5f5.png)
+
+![home](https://user-images.githubusercontent.com/36139351/54079130-fb835b80-4308-11e9-94c1-80d80d40f5f5.png)
 
 ## Api Route
 
